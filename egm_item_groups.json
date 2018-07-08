@@ -176,7 +176,28 @@
     "type": "item_group",
     "id": "ig_bmc_vending_mutagen",
     "items": [
-      ["mutagen_troglobite", 30]
+      ["mutagen", 60],
+      ["mutagen_alpha", 10],
+      ["mutagen_beast", 30],
+      ["mutagen_bird", 30],
+      ["mutagen_cattle", 30],
+      ["mutagen_cephalopod", 30],
+      ["mutagen_chimera", 20],
+      ["mutagen_elfa", 20],
+      ["mutagen_feline", 30],
+      ["mutagen_fish", 30],
+      ["mutagen_insect", 30],
+      ["mutagen_lizard", 30],
+      ["mutagen_lupine", 30],
+      ["mutagen_medical", 20],
+      ["mutagen_plant", 30],
+      ["mutagen_raptor", 30],
+      ["mutagen_rat", 30],
+      ["mutagen_slime", 30],
+      ["mutagen_spider", 30],
+      ["mutagen_troglobite", 30],
+      ["mutagen_ursine", 30],
+      ["purifier", 10]
     ]
   },
   {
@@ -235,8 +256,8 @@
     "type": "item_group",
     "id": "ig_bmc_desks",
     "items": [
-      {"group": "ig_bmc_mixed_books", "prob": 10},
-      {"group": "ig_bmc_vending_mutagen", "prob": 2},
+      {"group": "ig_bmc_mixed_books", "prob": 15},
+      {"group": "ig_bmc_vending_mutagen", "prob": 5},
       {"group": "ig_bmc_vending_supplements", "prob": 5},
       {"group": "ig_bmc_kitchenware", "prob": 5},
       {"group": "softdrugs", "prob": 10},
