@@ -4,11 +4,9 @@
     "name": "GROUP_BODY_MOD_CLINIC_INPATIENTS",
     "default": "mon_null",
     "monsters": [
-      {"monster": "mon_beekeeper", "freq": 150, "cost_multiplier": 10},
-      {"monster": "mon_crawler", "freq": 50, "cost_multiplier": 10},
-      {"monster": "mon_dementia", "freq": 50, "cost_multiplier": 10},
-      {"monster": "mon_one_eye", "freq": 150, "cost_multiplier": 10},
-      {"monster": "mon_twisted_body", "freq": 50, "cost_multiplier": 10}
+      {"monster": "mon_one_eye", "freq": 150, "cost_multiplier": 1},
+      {"monster": "mon_crawler", "freq": 50, "cost_multiplier": 1},
+      {"monster": "mon_twisted_body", "freq": 50, "cost_multiplier": 1}
     ]
   },
   {
@@ -142,9 +140,9 @@
         {"item": "television", "x": 6, "y": 10, "chance": 1}
       ],
       "place_monsters": [
-        {"monster": "GROUP_BODY_MOD_CLINIC_INPATIENTS", "chance": 1, "x":19, "y":4},
-        {"monster": "GROUP_BODY_MOD_CLINIC_INPATIENTS", "chance": 1, "x":19, "y":10},
-        {"monster": "GROUP_BODY_MOD_CLINIC_INPATIENTS", "chance": 1, "x":19, "y":16}
+        {"monster": "GROUP_BODY_MOD_CLINIC_INPATIENTS", "x":19, "y":4},
+        {"monster": "GROUP_BODY_MOD_CLINIC_INPATIENTS", "x":19, "y":10},
+        {"monster": "GROUP_BODY_MOD_CLINIC_INPATIENTS", "x":19, "y":16}
       ],
       "toilets": {
         "T": {}
@@ -262,24 +260,24 @@
         "c": {"item": "ig_bmc_custom_trash", "chance": 70}
       },
       "place_items": [
-        {"item": "ig_bmc_vending_supplements", "chance": 60, "repeat": [5,10], "x": 14, "y": 2},
+        {"item": "ig_bmc_vending_supplements", "chance": 70, "repeat": [5,10], "x": 14, "y": 2},
         {"item": "ig_bmc_vending_mutagen", "chance": 60, "repeat": [5,10], "x": 15, "y": 2}
       ],
       "add": [
         {"item": "plastic_shopping_bag", "x": 9, "y": 3, "chance": 2}
       ],
       "place_monsters": [
-        {"monster": "GROUP_BODY_MOD_CLINIC_INPATIENTS", "chance": 1, "x":10, "y":4},
+        {"monster": "GROUP_BODY_MOD_CLINIC_INPATIENTS", "x":10, "y":4},
 
-        {"monster": "GROUP_BODY_MOD_CLINIC_INPATIENTS", "chance": 1, "x":19, "y":4},
-        {"monster": "GROUP_BODY_MOD_CLINIC_INPATIENTS", "chance": 1, "x":19, "y":10},
-        {"monster": "GROUP_BODY_MOD_CLINIC_INPATIENTS", "chance": 1, "x":19, "y":16},
+        {"monster": "GROUP_BODY_MOD_CLINIC_INPATIENTS", "x":19, "y":4},
+        {"monster": "GROUP_BODY_MOD_CLINIC_INPATIENTS", "x":19, "y":10},
+        {"monster": "GROUP_BODY_MOD_CLINIC_INPATIENTS", "x":19, "y":16},
 
-        {"monster": "GROUP_BODY_MOD_CLINIC_INPATIENTS", "chance": 1, "x":4, "y":10},
-        {"monster": "GROUP_BODY_MOD_CLINIC_INPATIENTS", "chance": 1, "x":10, "y":10},
+        {"monster": "GROUP_BODY_MOD_CLINIC_INPATIENTS", "x":4, "y":10},
+        {"monster": "GROUP_BODY_MOD_CLINIC_INPATIENTS", "x":10, "y":10},
 
-        {"monster": "GROUP_BODY_MOD_CLINIC_INPATIENTS", "chance": 1, "x":4, "y":19},
-        {"monster": "GROUP_BODY_MOD_CLINIC_INPATIENTS", "chance": 1, "x":10, "y":19}
+        {"monster": "GROUP_BODY_MOD_CLINIC_INPATIENTS", "x":4, "y":19},
+        {"monster": "GROUP_BODY_MOD_CLINIC_INPATIENTS", "x":10, "y":19}
       ],
       "toilets": {
         "T": {}
