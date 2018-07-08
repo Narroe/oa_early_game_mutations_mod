@@ -1,33 +1,45 @@
 [
   {
+    "type": "monstergroup",
+    "name": "GROUP_BODY_MOD_CLINIC_INPATIENTS",
+    "default": "mon_null",
+    "monsters": [
+      {"monster": "mon_beekeeper", "freq": 150, "cost_multiplier": 10},
+      {"monster": "mon_crawler", "freq": 50, "cost_multiplier": 10},
+      {"monster": "mon_dementia", "freq": 50, "cost_multiplier": 10},
+      {"monster": "mon_one_eye", "freq": 150, "cost_multiplier": 10},
+      {"monster": "mon_twisted_body", "freq": 50, "cost_multiplier": 10}
+    ]
+  },
+  {
     "type": "mapgen",
     "om_terrain": ["cs_body_mod_clinic_z0"],
     "method": "json",
     "weight": 1000,
     "object": {
       "rows": [
-        ",..'....,.,.,,....,..,..",
-        "..,',..-ooooo----------.",
-        ",.,'..f|sssss|AA|cdddk|,",
-        "...',..|s   s|  |  H  |.",
-        ".,,''''G     |  l     #.",
-        ".......|  ttt|  |-D| B|,",
-        "..,.,.f|    h|  |ST|CB|,",
-        ",|-----|---D-|  |-----|.",
-        ".|rrOSF|d h  |  |cdddk|,",
-        ",|     |d    l  |  H  |.",
-        ".#    r|dddhc|  l     #.",
-        ".| hh  |-----|  |-D| B|,",
-        ",|htth |ST|ST|  |ST|CB|.",
-        ".#htth |-D--D|  |-----|.",
-        ",| hh        |  |cdddk|,",
-        ",|Vvc        D  |  H  |.",
-        ".|-----------|  l     #,",
-        ".|RRRRRRRR|t |  |-D| B|,",
-        ".|R       |th|  |ST|CB|.",
-        ",|R RRRRR |6 l  |-----|.",
-        ".|R       M  |       <|.",
-        ".|RRRRRRRR|7t|       <|,",
+        ",...''..,.,.,,....,..,..",
+        "..,,''.gggggg----------.",
+        ",.,.''.gysssy|pp|cdddk|,",
+        "....'''G     |  |  H  |.",
+        ".,,.'''G     |  l     #.",
+        ".......g  tt7|  |-D| B|,",
+        ".f,f,f.g    h|  |ST|CB|,",
+        ",|-----|---l-|  |-----|.",
+        ".|rrOSF|ch   ]  |cdddk|,",
+        ",|     |dd7  [  |  H  |.",
+        ".#  hhr|-----|  l     #.",
+        ".| htth|ST|ST|  |-D| B|,",
+        ",| htth|W |W |  |ST|CB|.",
+        ".#  hh |-D--D|  |-----|.",
+        ",|           ]  |cdddk|,",
+        ",|Vvc        {  |  H  |.",
+        ".|---------AA]  l     #,",
+        ".|RRRRRRRR|--|  |-D| B|,",
+        ".|R       |dd|  |ST|CB|.",
+        ",|R RRRRR |6h|  |-----|.",
+        ".|R       M  l     ] <|.",
+        ".|RRRRRRRR|tt|     { <|,",
         ",----------------------.",
         ".,.,,...,,...,,.,..,..,."
       ],
@@ -45,12 +57,19 @@
         ";": "t_railing_h",
         ">": "t_stairs_up",
         "G": "t_reinforced_door_glass_c",
+        "g": "t_reinforced_glass",
+        "[": "t_door_bar_locked",
+        "{": "t_door_bar_c",
+        "]": "t_bars",
         "<": "t_stairs_up",
-        "M": "t_door_metal_c",
+        "M": "t_door_metal_locked",
         "#": "t_window_bars_alarm",
         "A": "t_atm",
 
         "f": "t_dirt",
+        "p": "t_floor",
+        "y": "t_floor",
+        "W": "t_floor",
         "S": "t_floor",
         "k": "t_floor",
         "B": "t_floor",
@@ -75,6 +94,9 @@
       },
       "furniture": {
         "f": "f_bluebell",
+        "p": "f_indoor_plant",
+        "y": "f_indoor_plant_y",
+        "W": "f_shower",
         "S": "f_sink",
         "k": "f_bookcase",
         "B": "f_bed",
@@ -104,6 +126,7 @@
         "k": {"item": "ig_bmc_mixed_books", "chance": 50},
         "O": {"item": "oven", "chance": 50},
         "S": {"item": "ig_bmc_kitchenware", "chance": 50},
+        "R": {"item": "ig_bmc_vending_mutagen", "chance": 50},
         "F": {"item": "fridgesnacks", "chance": 60},
         "V": {"item": "vending_food_items", "chance": 80},
         "v": {"item": "vending_drink_items", "chance": 80}
@@ -115,12 +138,32 @@
       ],
       "add": [
         {"item": "microwave", "x": 3, "y": 8, "chance": 2},
-        {"item": "coffeemaker", "x": 2, "y": 8, "chance": 2}
+        {"item": "coffeemaker", "x": 2, "y": 8, "chance": 2},
+        {"item": "television", "x": 6, "y": 10, "chance": 1}
+      ],
+      "place_monsters": [
+        {"monster": "GROUP_BODY_MOD_CLINIC_INPATIENTS", "chance": 1, "x":19, "y":4},
+        {"monster": "GROUP_BODY_MOD_CLINIC_INPATIENTS", "chance": 1, "x":19, "y":10},
+        {"monster": "GROUP_BODY_MOD_CLINIC_INPATIENTS", "chance": 1, "x":19, "y":16}
       ],
       "toilets": {
         "T": {}
+      },
+      "computers": {
+        "6": {
+          "name": "Secure Room Terminal", 
+          "security": 4, 
+          "options": [
+            { "name": "Unlock Secure Room", "action": "unlock" }, 
+            { "name": "Lock Secure Room", "action": "lock" } 
+          ], 
+          "failures": [
+            { "action": "shutdown" },
+            { "action": "alarm" }
+          ]
+        }
       }
-    }    
+    }
   },
   {
     "type": "mapgen",
@@ -130,12 +173,12 @@
     "object": {
       "rows": [
         "........................",
-        ".......:;;;;;---------|.",
-        ".......:'''''|UU|cdddk|.",
-        ".......:'''''|  |  H  |.",
-        ".......:'''''G  l     #.",
-        ".......:'''''|  |-D| B|.",
-        ".......:bbbbb|  |ST|CB|.",
+        ".......gggggg---------|.",
+        ".......gpbbbp|UU|cdddk|.",
+        ".......gb''''|  |  H  |.",
+        ".......gb''''G  l     #.",
+        ".......gb''''|  |-D| B|.",
+        ".......gpbbbp|  |ST|CB|.",
         ".|--#--|--#--|  |-----|.",
         ".|k  BB|k  BB|  |cdddk|.",
         ".|d   C|d   C|  |  H  |.",
@@ -149,8 +192,8 @@
         ".|c  |S|c  |S|  |-D| B|.",
         ".|d  DT|d  DT|  |ST|CB|.",
         ".|dH --|dH --|  |-----|.",
-        ".|d   C|d   C|       >|.",
-        ".|k  BB|k  BB|       >|.",
+        ".|d   C|d   C|     [ >|.",
+        ".|k  BB|k  BB|     ] >|.",
         ".---#-----#------------.",
         "........................"
       ],
@@ -165,11 +208,15 @@
         "o": "t_window_alarm",
         ":": "t_railing_v",
         ";": "t_railing_h",
-        ">": "t_stairs_down",
         "G": "t_reinforced_door_glass_c",
+        "g": "t_reinforced_glass",
+        ">": "t_stairs_down",
+        "[": "t_door_bar_locked",
+        "]": "t_bars",
         "#": "t_window_bars_alarm",
 
         "b": "t_sidewalk",
+        "p": "t_sidewalk",
         "S": "t_floor",
         "k": "t_floor",
         "B": "t_floor",
@@ -189,6 +236,7 @@
       },
       "furniture": {
         "b": "f_bench",
+        "p": "f_indoor_plant_y",
         "S": "f_sink",
         "k": "f_bookcase",
         "B": "f_bed",
@@ -214,11 +262,24 @@
         "c": {"item": "ig_bmc_custom_trash", "chance": 70}
       },
       "place_items": [
-        {"item": "ig_bmc_vending_supplements", "chance": 60, "repeat": [3,6], "x": 14, "y": 2},
-        {"item": "ig_bmc_vending_mutagen", "chance": 60, "repeat": [3,6], "x": 15, "y": 2}
+        {"item": "ig_bmc_vending_supplements", "chance": 60, "repeat": [5,10], "x": 14, "y": 2},
+        {"item": "ig_bmc_vending_mutagen", "chance": 60, "repeat": [5,10], "x": 15, "y": 2}
       ],
       "add": [
         {"item": "plastic_shopping_bag", "x": 9, "y": 3, "chance": 2}
+      ],
+      "place_monsters": [
+        {"monster": "GROUP_BODY_MOD_CLINIC_INPATIENTS", "chance": 1, "x":10, "y":4},
+
+        {"monster": "GROUP_BODY_MOD_CLINIC_INPATIENTS", "chance": 1, "x":19, "y":4},
+        {"monster": "GROUP_BODY_MOD_CLINIC_INPATIENTS", "chance": 1, "x":19, "y":10},
+        {"monster": "GROUP_BODY_MOD_CLINIC_INPATIENTS", "chance": 1, "x":19, "y":16},
+
+        {"monster": "GROUP_BODY_MOD_CLINIC_INPATIENTS", "chance": 1, "x":4, "y":10},
+        {"monster": "GROUP_BODY_MOD_CLINIC_INPATIENTS", "chance": 1, "x":10, "y":10},
+
+        {"monster": "GROUP_BODY_MOD_CLINIC_INPATIENTS", "chance": 1, "x":4, "y":19},
+        {"monster": "GROUP_BODY_MOD_CLINIC_INPATIENTS", "chance": 1, "x":10, "y":19}
       ],
       "toilets": {
         "T": {}
