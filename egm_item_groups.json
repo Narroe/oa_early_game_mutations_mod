@@ -282,7 +282,7 @@
       ["atomic_lamp", 1],
       ["alarmclock", 20],
       ["knitting_needles", 10],
-      ["picklocks", 3],
+      ["picklocks", 5],
       ["crude_picklock", 10],
       ["scrap", 10],
       ["razor_blade", 10],
@@ -301,6 +301,16 @@
       ["tailors_kit", 5],
       ["thread", 20],
       ["scissors", 20],
+      ["multitool", 6],
+      ["magnifying_glass", 5],
+      ["superglue", 20],
+      ["screwdriver", 10],
+      ["screwdriver_set", 5],
+      ["permanent_marker", 20],
+      ["bubblewrap", 20],
+      ["duct_tape", 20],
+      ["string_6", 10],
+      ["string_36", 10],
       ["survnote", 1]
     ]
   }
