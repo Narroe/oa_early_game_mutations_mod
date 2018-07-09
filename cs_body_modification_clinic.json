@@ -27,9 +27,9 @@
         ".|rrOSF|ch   ]  |cdddk|,",
         ",|     |dd7  [  |  H  |.",
         ".#  hhr|-----|  l     #.",
-        ".| htth|ST|ST|  |-D| B|,",
-        ",| htth|W |W |  |ST|CB|.",
-        ".#  hh |-D--D|  |-----|.",
+        ".| htth|SW|LL|  |-D| B|,",
+        ",| htth|T |  |  |ST|CB|.",
+        ".#  hh |-D--l|  |-----|.",
         ",|           ]  |cdddk|,",
         ",|Vvc        {  |  H  |.",
         ".|---------AA]  l     #,",
@@ -61,7 +61,7 @@
         "]": "t_bars",
         "<": "t_stairs_up",
         "M": "t_door_metal_locked",
-        "#": "t_window_bars_alarm",
+        "#": "t_window_bars",
         "A": "t_atm",
 
         "f": "t_dirt",
@@ -117,8 +117,9 @@
       },
       "items": {
         "B": {"item": "bed", "chance": 70},
+        "L": {"item": "allclothes", "chance": 70},
         "C": {"item": "allclothes", "chance": 70},
-        "d": {"item": "ig_bmc_desks", "chance": 70},
+        "d": {"item": "ig_bmc_desks", "chance": 60},
         "s": {"item": "ig_bmc_discarded_news", "chance": 20},
         "c": {"item": "ig_bmc_custom_trash", "chance": 70},
         "k": {"item": "ig_bmc_mixed_books", "chance": 50},
@@ -130,7 +131,9 @@
         "v": {"item": "vending_drink_items", "chance": 80}
       },
       "place_items": [
-        {"item": "fridgesnacks", "chance": 60, "repeat": [0,6], "x": 6, "y": 8},
+        {"item": "ig_bmc_desks", "chance": 60, "repeat": [0,4], "x": 11, "y": 11},
+        {"item": "ig_bmc_desks", "chance": 60, "repeat": [0,4], "x": 12, "y": 11},
+        {"item": "fridgesnacks", "chance": 70, "repeat": [0,6], "x": 6, "y": 8},
         {"item": "vending_food_items", "chance": 60, "repeat": [3,6], "x": 2, "y": 15},
         {"item": "vending_drink_items", "chance": 60, "repeat": [3,6], "x": 3, "y": 15}
       ],
@@ -211,7 +214,7 @@
         ">": "t_stairs_down",
         "[": "t_door_bar_locked",
         "]": "t_bars",
-        "#": "t_window_bars_alarm",
+        "#": "t_window_bars",
 
         "b": "t_sidewalk",
         "p": "t_sidewalk",
@@ -255,7 +258,7 @@
       "items": {
         "B": {"item": "bed", "chance": 70},
         "C": {"item": "allclothes", "chance": 70},
-        "d": {"item": "ig_bmc_desks", "chance": 70},
+        "d": {"item": "ig_bmc_desks", "chance": 60},
         "k": {"item": "ig_bmc_mixed_books", "chance": 50},
         "c": {"item": "ig_bmc_custom_trash", "chance": 70}
       },
