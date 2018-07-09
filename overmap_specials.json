@@ -12,7 +12,7 @@
     "locations": ["wilderness"], "//": "what special locations does it spawn",
     "city_distance": [0,2], "//": "how far from a city it should be",
     "city_sizes": [0,20], "//": "what city sizes should it spawn in",
-    "occurrences": [9,10], "//": "how many per overmap",
+    "occurrences": [0,3], "//": "how many per overmap",
     "rotate": true, "//": "allow rotation",
     "flags": ["CLASSIC"]
   }
