@@ -1,12 +1,19 @@
 # oa_early_game_mutations_mod
 
-This mod adds one building to the game; namely the "body modification clinic".
+This mod adds the "body modification clinic". A two Z-level building that allows characters to access mutagen in the early game.
 
-This building houses a small treasure trove of mutagens; that allows an early game character to experiment with basic mutations.
-Finding the building is the easy part, getting it's treasure however...
+This gives an early game character pre-threshold (good or bad) mutations that they may be stuck with for sometime (i.e. until they can manufactor/collect purifier reliably).
 
-I made this mod, so that I could play around with different (pre-threshold) mutations before they get overshadowed by other mid-game loot. 
-For example: a fluffy tail is nice, but not at the cost of power armour.
+The mod also comes with 2 start scenarios:
+
+"Prospective Mutant"
+- starts in the Body Mod Clinic
+- limited character pool
+
+"Custom Human"
+- starts in the Body Mod Clinic
+- limited character pool
+- can pick mutations at character creation
 
 Beware the other post-humans.
 
