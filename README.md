@@ -2,7 +2,7 @@
 
 This mod adds the "body modification clinic". A two Z-level building that allows characters to access mutagen in the early game.
 
-This gives an early game character pre-threshold (good or bad) mutations that they may be stuck with for sometime (i.e. until they can manufactor/collect purifier reliably).
+This gives an early game character pre-threshold (good or bad) mutations that they may be stuck with for sometime (i.e. until they can manufacture/collect purifier reliably).
 
 The mod also comes with start scenarios:
 
