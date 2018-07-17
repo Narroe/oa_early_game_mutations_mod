@@ -266,6 +266,8 @@
       {"group": "ig_bmc_vending_supplements", "prob": 5},
       {"group": "ig_bmc_kitchenware", "prob": 5},
       {"group": "softdrugs", "prob": 10},
+      {"group": "traveler", "prob": 25},
+      {"item": "cash_card", "prob": 30, "charges-min": 0, "charges-max": 50000},
       ["battery", 20],
       ["radio", 15],
       ["rag", 20],
