@@ -18,7 +18,7 @@ The mod also comes with start scenarios:
 and the profession(s): 
 
 "Inpatient"
-- no real starting gear except an XL jumpsuit and a cash card.
+- no real starting gear except an XL jumpsuit and a pair of leather sandals.
 
 
 Beware the other post-humans.
