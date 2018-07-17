@@ -4,7 +4,7 @@ This mod adds the "body modification clinic". A two Z-level building that allows
 
 This gives an early game character pre-threshold (good or bad) mutations that they may be stuck with for sometime (i.e. until they can manufactor/collect purifier reliably).
 
-The mod also comes with 2 start scenarios:
+The mod also comes the start scenarios:
 
 "Prospective Mutant"
 - starts in the Body Mod Clinic
@@ -13,8 +13,14 @@ The mod also comes with 2 start scenarios:
 "Custom Human"
 - starts in the Body Mod Clinic
 - limited character pool
-- can pick mutations at character creation
+- mutations available at character creation
+
+and the profession(s): 
+
+"Inpatient"
+- no real starting gear except an XL jumpsuit and a cash card.
+
 
 Beware the other post-humans.
 
-Feedback welcome.
+Feedback appreciated.
