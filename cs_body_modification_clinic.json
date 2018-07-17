@@ -18,20 +18,20 @@
       "rows": [
         ",...''..,.,.,,....,..,..",
         "..,,''.gggggg----------.",
-        ",.,.''.gysssy|pp|cdddk|,",
-        "....'''G     |  |  H  |.",
+        ",.,.''.gysssy|pp|kc  d|,",
+        "....'''G     |  |   Hd|.",
         ".,,.'''G     |  l     #.",
         ".......g  tt7|  |-D| B|,",
         ".f,f,f.g    h|  |ST|CB|,",
         ",|-----|---l-|  |-----|.",
-        ".|rrOSF|ch   ]  |cdddk|,",
-        ",|     |dd7  [  |  H  |.",
+        ".|rrOSF|7h   ]  |kc dd|,",
+        ",|     |dddc [  |    H|.",
         ".#  hhr|-----|  l     #.",
         ".| htth|SW|LL|  |-D| B|,",
         ",| htth|T |  |  |ST|CB|.",
         ".#  hh |-D--l|  |-----|.",
-        ",|           ]  |cdddk|,",
-        ",|Vvc        {  |  H  |.",
+        ",|           ]  |kc  d|,",
+        ",|Vvc        {  |   Hd|.",
         ".|---------AA]  l     #,",
         ".|RRRRRRRR|--|  |-D| B|,",
         ".|R       |dd|  |ST|CB|.",
@@ -117,9 +117,9 @@
       },
       "items": {
         "B": {"item": "bed", "chance": 70},
-        "L": {"item": "allclothes", "chance": 70},
         "C": {"item": "allclothes", "chance": 70},
         "d": {"item": "ig_bmc_desks", "chance": 60},
+        "L": {"item": "ig_bmc_desks", "chance": 60},
         "s": {"item": "ig_bmc_discarded_news", "chance": 20},
         "c": {"item": "ig_bmc_custom_trash", "chance": 70},
         "k": {"item": "ig_bmc_mixed_books", "chance": 50},
@@ -140,12 +140,29 @@
       "add": [
         {"item": "microwave", "x": 3, "y": 8, "chance": 2},
         {"item": "coffeemaker", "x": 2, "y": 8, "chance": 2},
-        {"item": "television", "x": 6, "y": 10, "chance": 1}
+        {"item": "television", "x": 6, "y": 10, "chance": 1},
+
+        {"item": "scrap", "x": 18, "y": 2, "chance": 2},
+        {"item": "scrap", "x": 18, "y": 8, "chance": 2},
+        {"item": "scrap", "x": 18, "y": 14, "chance": 2},
+
+        {"item": "suitcase_l", "x": 20, "y": 2, "chance": 5},
+        {"item": "suitcase_l", "x": 19, "y": 8, "chance": 5},
+        {"item": "suitcase_l", "x": 20, "y": 17, "chance": 5}
       ],
       "place_monsters": [
         {"monster": "GROUP_BODY_MOD_CLINIC_INPATIENTS", "x":19, "y":4},
         {"monster": "GROUP_BODY_MOD_CLINIC_INPATIENTS", "x":19, "y":10},
-        {"monster": "GROUP_BODY_MOD_CLINIC_INPATIENTS", "x":19, "y":16}
+        {"monster": "GROUP_BODY_MOD_CLINIC_INPATIENTS", "x":19, "y":16},
+
+        {"monster": "GROUP_BODY_MOD_CLINIC_INPATIENTS", "x":3, "y":13},
+        {"monster": "GROUP_BODY_MOD_CLINIC_INPATIENTS", "x":14, "y":12},
+        {"monster": "GROUP_BODY_MOD_CLINIC_INPATIENTS", "x":16, "y":21}
+      ],
+      "place_npcs": [
+        {"class": "inpatient_rat", "x": 14, "y": 4},
+        {"class": "inpatient_cattle", "x": 18, "y": 10},
+        {"class": "inpatient_cephalopod", "x": 19, "y": 15}
       ],
       "toilets": {
         "T": {}
@@ -175,26 +192,26 @@
       "rows": [
         "........................",
         ".......gggggg---------|.",
-        ".......gpbbbp|UU|cdddk|.",
-        ".......gb''''|  |  H  |.",
+        ".......gpbbbp|UU|kc  d|.",
+        ".......gb''''|  |   Hd|.",
         ".......gb''''G  l     #.",
         ".......gb''''|  |-D| B|.",
         ".......gpbbbp|  |ST|CB|.",
         ".|--#--|--#--|  |-----|.",
-        ".|k  BB|k  BB|  |cdddk|.",
-        ".|d   C|d   C|  |  H  |.",
-        ".|dH --|dH --|  l     #.",
-        ".|d  DT|d  DT|  |-D| B|.",
-        ".|c  |S|c  |S|  |ST|CB|.",
+        ".|dd BB|dd BB|  |kc Hd|.",
+        ".| H  C| H  C|  |    d|.",
+        ".|   --|   --|  l     #.",
+        ".|c  DT|c  DT|  |-D| B|.",
+        ".|k  |S|k  |S|  |ST|CB|.",
         ".|--l-----l--|  |-----|.",
-        ".#              |cdddk|.",
-        ".#              |  H  |.",
-        ".|--l-----l--|  l     #.",
-        ".|c  |S|c  |S|  |-D| B|.",
-        ".|d  DT|d  DT|  |ST|CB|.",
-        ".|dH --|dH --|  |-----|.",
-        ".|d   C|d   C|     [ >|.",
-        ".|k  BB|k  BB|     ] >|.",
+        ".#              |kc  d|.",
+        ".#              |    d|.",
+        ".|--l-----l--|  l    H#.",
+        ".|k  |S|k  |S|  |-D| B|.",
+        ".|c  DT|c  DT|  |ST|CB|.",
+        ".|   --|   --|  |-----|.",
+        ".| H  C|d   C|     [ >|.",
+        ".|dd BB|dH BB|     ] >|.",
         ".---#-----#------------.",
         "........................"
       ],
@@ -267,7 +284,26 @@
         {"item": "ig_bmc_vending_mutagen", "chance": 60, "repeat": [5,10], "x": 15, "y": 2}
       ],
       "add": [
-        {"item": "plastic_shopping_bag", "x": 9, "y": 3, "chance": 2}
+        {"item": "plastic_shopping_bag", "x": 9, "y": 3, "chance": 2},
+
+        {"item": "rock", "x": 10, "y": 4, "chance": 1},
+        {"item": "rock", "x": 11, "y": 4, "chance": 1},
+
+        {"item": "scrap", "x": 18, "y": 2, "chance": 2},
+        {"item": "scrap", "x": 18, "y": 8, "chance": 2},
+        {"item": "scrap", "x": 18, "y": 14, "chance": 2},
+        {"item": "scrap", "x": 2, "y": 11, "chance": 2},
+        {"item": "scrap", "x": 2, "y": 18, "chance": 2},
+        {"item": "scrap", "x": 8, "y": 11, "chance": 2},
+        {"item": "scrap", "x": 8, "y": 18, "chance": 2},
+
+        {"item": "suitcase_l", "x": 20, "y": 2, "chance": 5},
+        {"item": "suitcase_l", "x": 19, "y": 9, "chance": 5},
+        {"item": "suitcase_l", "x": 20, "y": 17, "chance": 5},
+        {"item": "suitcase_l", "x": 2, "y": 9, "chance": 5},
+        {"item": "suitcase_l", "x": 4, "y": 21, "chance": 5},
+        {"item": "suitcase_l", "x": 11, "y": 9, "chance": 5},
+        {"item": "suitcase_l", "x": 10, "y": 21, "chance": 5}
       ],
       "place_monsters": [
         {"monster": "GROUP_BODY_MOD_CLINIC_INPATIENTS", "x":10, "y":4},
@@ -281,6 +317,11 @@
 
         {"monster": "GROUP_BODY_MOD_CLINIC_INPATIENTS", "x":4, "y":19},
         {"monster": "GROUP_BODY_MOD_CLINIC_INPATIENTS", "x":10, "y":19}
+      ],
+      "place_npcs": [
+        {"class": "inpatient_rat", "x": 17, "y": 16},
+        {"class": "inpatient_cattle", "x": 11, "y": 6},
+        {"class": "inpatient_cephalopod", "x": 2, "y": 15}
       ],
       "toilets": {
         "T": {}
